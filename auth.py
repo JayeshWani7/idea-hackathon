@@ -41,11 +41,11 @@ def capture_image():
     cv2.destroyAllWindows()
     return None
 
-def authenticate_face(captured_image_path, stored_image_path):
+def authenticate_face(captured_image_path, STORED_IMAGE_PATH):
     """Compare the captured image with the stored image using DeepFace"""
     try:
         print("Authenticating...")
-        result = DeepFace.verify(captured_image_path, stored_image_path)
+        result = DeepFace.verify(captured_image_path, STORED_IMAGE_PATH)
 
         if result["verified"]:
             print("✅ Authentication Successful!")
