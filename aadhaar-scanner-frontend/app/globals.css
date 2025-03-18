@@ -27,3 +27,14 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.neumorphism {
+  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.neumorphism:hover {
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+}
